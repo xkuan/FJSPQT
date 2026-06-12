@@ -1,4 +1,3 @@
-
 import numpy as np
 import random
 from typing import Tuple, List, Set, Dict
@@ -16,9 +15,7 @@ PROCESS_TIME_RANGES_MIN: Dict[int, Tuple[int, int]] = {
     7: (5, 15),
 }
 
-
 DEFAULT_LAG_RANGE_MIN = (5, 15)
-
 
 LAG_RANGE_MAP_MIN: Dict[Tuple[int, int], Tuple[int, int]] = {
     (0, 1): (8, 18),
@@ -37,10 +34,8 @@ LAG_RANGE_MAP_MIN: Dict[Tuple[int, int], Tuple[int, int]] = {
     (7, 2): (5, 15),
 }
 
-
 ENFORCE_PROC_VS_LAG: bool = True
 PROC_TO_LAG_MIN_RATIO: float = 1.0
-
 
 FIRST_OP_PRIORS: Dict[int, float] = {
     2: 0.25,
@@ -52,7 +47,6 @@ FIRST_OP_PRIORS: Dict[int, float] = {
     6: 0.04,
     7: 0.02,
 }
-
 
 TRANSITION_WEIGHTS: Dict[int, Dict[int, float]] = {
 
